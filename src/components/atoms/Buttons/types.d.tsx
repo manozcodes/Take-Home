@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 export type GradientButtonProps = {
   text: string;
   type?: 'button' | 'submit' | 'reset';
@@ -8,7 +10,7 @@ export type GradientButtonProps = {
 };
 
 export type MutedButtonProps = {
-  text: string;
+  text: string | ReactNode;
   type?: 'button' | 'submit' | 'reset';
   fullWidth?: boolean;
   className?: string;
